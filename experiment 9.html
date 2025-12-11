@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment</title>
+    <style>
+        @media(max-width:600px){
+            .product{
+                display:block;
+                width:300px;
+                height:200px;
+                margin:10px;
+                text-align: center;
+                align-content: center;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                background-color: white;
+            }
+            .container{
+                border:1px solid black;
+                background-color: rgb(252, 252, 252);
+                width:max-content;
+                text-align: center;
+            }
+        }
+        @media(min-width:600px){
+            .product{
+ margin:10px;
+                text-align: center;
+                align-content: center;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                background-color: white;
+            }
+            .grid{
+                display:grid;
+                grid-template-columns:repeat(2,300px); 
+                grid-template-rows: repeat(2,200px);
+                
+            }
+            .container{
+                border:1px solid black;
+                background-color: rgb(252, 252, 252);
+                text-align: center;
+                width:max-content;
+            }
+        }
+        @media(min-width:1024px){
+            .product{
+                
+                margin:10px;
+                text-align: center;
+                align-content: center;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                background-color: white;
+            }
+ .grid{
+                display:grid;
+                grid-template-columns:repeat(4,300px); 
+                
+                
+            }
+            .container{
+                border:1px solid black;
+                background-color: rgb(252, 252, 252);
+                text-align: center;
+                height:300px;
+                width:max-content;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Responsive Product Grid</h2>
+        <div class="grid">
+        <div class="product"><img src="."alt="product 1"> <b><p>Product 1</p></b><p>High-quality item with great features.<br> &#8377;499</p></div>
+        <div class="product"><img src="."alt="product 2"> <b><p>Product 2</p></b><p>Durable and stylish for daily use.<br> &#8377;799</p></div>
+        <div class="product"><img src="."alt="product 3"> <b><p>Product 3</p></b><p>lightweight and comfortable.<br> &#8377;1,299</p></div>
+<div class="product"><img src="."alt="product 4"> <b><p>Product 4</p></b><p>Trendy design with premium quality.<br> &#8377;999</p></div>
+    </div>
+    </div>
+    <br>
+<hr>
+<p>Mukul yadav cse 21 <br> 2025B01011101</p>
+
+</body>
+</html>
